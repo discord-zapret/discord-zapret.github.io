@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <title>Zapret Discord — Исправить Discord и YouTube | Discord Fix скачать бесплатно</title>
+  <meta name="description" content="РАБОЧИЙ ДИСКОРД ЗАПРЕТ (23.05.2026) — бесплатная утилита для Discord Fix. Исправляет Discord и YouTube. Версия 1.9.8c. Скачать ZIP или RAR. Работает без VPN." />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="zapret discord, Discord Fix, zapret discord youtube, zapret скачать, исправить Discord, Discord Россия, YouTube заблокирован, обход блокировок DPI, zapret windows, скачать бесплатно" />
+
+  <meta property="og:title" content="zapret discord — Исправить Discord и YouTube в России | Discord Fix скачать бесплатно" />
+  <meta property="og:description" content="zapret discord — бесплатная утилита для обхода DPI блокировок. Исправляет Discord и YouTube для пользователей в России. Версия 1.9.8c. Скачать ZIP или RAR. Работает без VPN." />
+  <meta property="og:url" content="https://discordfix.replit.app" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ru_RU" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="zapret discord — Исправить Discord и YouTube в России | Discord Fix скачать бесплатно" />
+  <meta name="twitter:description" content="zapret discord — бесплатная утилита для обхода DPI блокировок. Исправляет Discord и YouTube для пользователей в России. Версия 1.9.8c. Скачать ZIP или RAR. Работает без VPN." />
+
+  <link rel="canonical" href="https://discordfix.replit.app" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Discord Fix",
+    "description": "Бесплатная утилита для обхода DPI блокировок. Исправляет Discord и YouTube для пользователей в России.",
+    "url": "https://discordfix.replit.app",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Windows 7, Windows 10, Windows 11",
+    "softwareVersion": "1.9.8c",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "RUB"
+    }
+  }
+  </script>
+
+  <style>
+    /* ============================================================
+       CSS CUSTOM PROPERTIES — THEME TOKENS
+    ============================================================ */
+    :root {
+      --bg:          #0d1117;
+      --bg-subtle:   #161b22;
+      --bg-card:     #1a1f2e;
+      --border:      rgba(255,255,255,0.07);
+      --text:        #e6edf3;
+      --text-muted:  #8b949e;
+      --primary:     #7c6aff;
+      --primary-dim: rgba(124,106,255,0.15);
+      --primary-border: rgba(124,106,255,0.3);
+      --accent:      #00d4ff;
+      --destructive: #f85149;
+      --destructive-dim: rgba(248,81,73,0.12);
+      --orange:      #f0883e;
+      --orange-dim:  rgba(240,136,62,0.12);
+      --orange-border: rgba(240,136,62,0.3);
+      --code-bg:     rgba(255,255,255,0.06);
+      --shadow:      0 4px 24px rgba(0,0,0,0.4);
+      --radius:      12px;
+      --radius-sm:   8px;
+      --header-bg:   rgba(13,17,23,0.85);
+    }
+
+    [data-theme="light"] {
+      --bg:          #f6f8fa;
+      --bg-subtle:   #eaeef2;
+      --bg-card:     #ffffff;
+      --border:      rgba(0,0,0,0.09);
+      --text:        #1f2328;
+      --text-muted:  #57606a;
+      --primary:     #6153d3;
+      --primary-dim: rgba(97,83,211,0.1);
+      --primary-border: rgba(97,83,211,0.25);
+      --accent:      #0969da;
+      --destructive: #cf222e;
+      --destructive-dim: rgba(207,34,46,0.08);
+      --orange:      #bc4c00;
+      --orange-dim:  rgba(188,76,0,0.08);
+      --orange-border: rgba(188,76,0,0.25);
+      --code-bg:     rgba(0,0,0,0.05);
+      --shadow:      0 4px 24px rgba(0,0,0,0.1);
+      --header-bg:   rgba(246,248,250,0.9);
+    }
+
+    /* ============================================================
+       RESET & BASE
+    ============================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      transition: background 0.25s, color 0.25s;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--primary); text-decoration: none; transition: opacity 0.2s; }
+    a:hover { opacity: 0.8; text-decoration: underline; }
+    code {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.85em;
+      background: var(--code-bg);
+      padding: 0.15em 0.45em;
+      border-radius: 4px;
+      color: var(--accent);
+    }
+    strong { font-weight: 600; color: var(--text); }
+
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ============================================================
+       HEADER / NAV
+    ============================================================ */
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      background: var(--header-bg);
+      border-bottom: 1px solid var(--border);
+      transition: background 0.25s;
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Space Mono', monospace;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .nav-logo:hover { opacity: 1; text-decoration: none; }
+    .nav-logo svg { color: var(--primary); }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    nav a {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: var(--text); text-decoration: none; opacity: 1; }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .nav-links { display: flex; gap: 28px; }
+
+    /* Theme Toggle */
+    .theme-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: transparent;
+      cursor: pointer;
+      color: var(--text-muted);
+      transition: background 0.2s, color 0.2s, border-color 0.2s;
+    }
+    .theme-toggle:hover {
+      background: var(--primary-dim);
+      color: var(--primary);
+      border-color: var(--primary-border);
+    }
+    .icon-sun, .icon-moon { display: none; }
+    [data-theme="dark"] .icon-moon { display: block; }
+    [data-theme="light"] .icon-sun { display: block; }
+
+    /* ============================================================
+       HERO
+    ============================================================ */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 160px 0 100px;
+      text-align: center;
+    }
+
+    .hero-glow {
+      position: absolute;
+      top: -20%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 800px;
+      height: 500px;
+      background: radial-gradient(ellipse at center, var(--primary-dim) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: var(--primary);
+      background: var(--primary-dim);
+      border: 1px solid var(--primary-border);
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, var(--text) 0%, var(--text-muted) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 560px;
+      margin: 0 auto 40px;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.9rem;
+      font-weight: 700;
+      padding: 14px 28px;
+      border-radius: var(--radius-sm);
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.15s, box-shadow 0.15s, opacity 0.15s;
+      white-space: nowrap;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.25); text-decoration: none; opacity: 1; }
+    .btn:active { transform: translateY(0); }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+    .btn-secondary {
+      background: var(--bg-card);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .hero-link {
+      font-size: 0.875rem;
+      color: var(--primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* ============================================================
+       WARNINGS STRIP
+    ============================================================ */
+    .warnings {
+      padding: 48px 0;
+      background: var(--bg-subtle);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .warnings-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .warn-card {
+      padding: 20px 24px;
+      border-radius: var(--radius);
+      border: 1px solid;
+    }
+    .warn-card.danger {
+      background: var(--destructive-dim);
+      border-color: rgba(248,81,73,0.25);
+    }
+    .warn-card.caution {
+      background: var(--orange-dim);
+      border-color: var(--orange-border);
+    }
+
+    .warn-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
+    .warn-card.danger .warn-title { color: var(--destructive); }
+    .warn-card.caution .warn-title { color: var(--orange); }
+
+    .warn-card p {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* ============================================================
+       SECTION SHARED
+    ============================================================ */
+    section { padding: 80px 0; }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .section-header h2 {
+      font-size: clamp(1.6rem, 4vw, 2.25rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+    .section-header p {
+      color: var(--text-muted);
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    /* ============================================================
+       INSTRUCTIONS
+    ============================================================ */
+    .steps { max-width: 680px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px; }
+
+    .step {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      animation: fadeInUp 0.5s ease both;
+    }
+
+    .step-num {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--primary-dim);
+      border: 2px solid var(--primary-border);
+      color: var(--primary);
+      font-family: 'Space Mono', monospace;
+      font-weight: 700;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .step-body h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .step-body p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.7; }
+
+    /* ============================================================
+       FILES
+    ============================================================ */
+    .files-section {
+      background: var(--bg-subtle);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow);
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .card:hover {
+      border-color: var(--primary-border);
+      transform: translateY(-3px);
+    }
+
+    .card-icon {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 6px;
+    }
+    .card-icon svg { color: var(--primary); }
+    .card-title {
+      font-family: 'Space Mono', monospace;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+    .card-sub {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      margin-top: 2px;
+    }
+
+    .feature-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .feature-list li {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      padding-left: 0;
+      line-height: 1.5;
+    }
+    .feature-list strong { color: var(--text); }
+
+    /* ============================================================
+       FAQ — uses <details>/<summary>
+    ============================================================ */
+    .faq-icon {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .faq-icon svg { color: var(--primary); }
+
+    .faq-list {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    details {
+      border-bottom: 1px solid var(--border);
+    }
+    details:first-of-type { border-top: 1px solid var(--border); }
+
+    summary {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 4px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      list-style: none;
+      color: var(--text);
+      gap: 12px;
+      transition: color 0.2s;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary:hover { color: var(--primary); }
+
+    .summary-chevron {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      color: var(--text-muted);
+      transition: transform 0.3s;
+    }
+    details[open] .summary-chevron { transform: rotate(180deg); }
+    details[open] summary { color: var(--primary); }
+
+    .faq-answer {
+      padding: 0 4px 18px;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+    }
+    .faq-answer a { color: var(--primary); }
+
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    footer {
+      background: var(--bg-subtle);
+      border-top: 1px solid var(--border);
+      padding: 56px 0 32px;
+      text-align: center;
+    }
+
+    .footer-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Space Mono', monospace;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    .footer-desc {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      max-width: 560px;
+      margin: 0 auto 24px;
+      line-height: 1.7;
+    }
+    .footer-desc a { color: var(--text); }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px 20px;
+      font-size: 0.85rem;
+      margin-bottom: 32px;
+    }
+    .footer-links a {
+      color: var(--text-muted);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--primary); text-decoration: none; opacity: 1; }
+
+    .footer-legal {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      opacity: 0.5;
+    }
+
+    /* ============================================================
+       ANIMATIONS
+    ============================================================ */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(28px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate { opacity: 0; }
+    .animate.visible {
+      animation: fadeInUp 0.55s ease forwards;
+    }
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.2s; }
+    .delay-3 { animation-delay: 0.3s; }
+    .delay-4 { animation-delay: 0.4s; }
+
+    /* ============================================================
+       RESPONSIVE
+    ============================================================ */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hero { padding: 120px 0 72px; }
+      .btn { padding: 12px 20px; font-size: 0.85rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header>
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo" aria-label="Discord Fix — главная">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><polyline points="7 10 12 5 17 10"/></svg>
+        Discord Fix
+      </a>
+
+      <nav class="nav-links" aria-label="Основное меню">
+        <a href="#download">Скачать</a>
+        <a href="#instructions">Инструкция</a>
+        <a href="#files">Файлы</a>
+        <a href="#faq">FAQ</a>
+        <a href="zapret-discord/" style="color:var(--primary);">zapret discord</a>
+        <a href="zapret-discord-youtube/" style="color:var(--primary);">zapret discord youtube</a>
+      </nav>
+
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему" title="Переключить тему">
+          <!-- Moon (dark mode) -->
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <!-- Sun (light mode) -->
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+        <a href="https://github.com/blipperr/Discord-Fix" target="_blank" rel="noopener noreferrer" aria-label="GitHub репозиторий" style="color:var(--text-muted); display:flex; align-items:center; transition:color 0.2s;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="download">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container" style="position:relative;z-index:1;">
+        <div class="badge">v1.9.8c</div>
+        <h1>Исправьте Discord и YouTube в России</h1>
+        <p>Бесплатная утилита <strong>zapret discord</strong> для обхода DPI блокировок. Исправляет Discord и YouTube без VPN. Надёжное решение от сообщества.</p>
+
+        <div class="btn-group">
+          <a href="https://github.com/blipperr/Discord-Fix/releases/download/Discord-Fix/zapret-discord-youtube-1.9.8c.zip"
+             class="btn btn-primary"
+             data-testid="btn-download-zip"
+             aria-label="Скачать ZIP архив Discord Fix v1.9.8c">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Скачать ZIP
+          </a>
+          <a href="https://github.com/blipperr/Discord-Fix/releases/download/Discord-Fix/zapret-discord-youtube-1.9.8c.rar"
+             class="btn btn-secondary"
+             data-testid="btn-download-rar"
+             aria-label="Скачать RAR архив Discord Fix v1.9.8c">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Скачать RAR
+          </a>
+        </div>
+        <a href="https://github.com/blipperr/Discord-Fix/releases"
+           target="_blank" rel="noopener noreferrer"
+           class="hero-link"
+           data-testid="link-all-releases">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          Все релизы на GitHub
+        </a>
+      </div>
+    </section>
+
+    <!-- ========== WARNINGS ========== -->
+    <div class="warnings" role="alert" aria-label="Важные предупреждения">
+      <div class="container">
+        <div class="warnings-grid">
+          <div class="warn-card danger">
+            <div class="warn-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Антивирусы — не паникуйте
+            </div>
+            <p>Драйвер <strong>WinDivert</strong> может вызвать ложное срабатывание (<em>Not-a-virus:RiskTool.Multi.WinDivert</em>). Это нормально — добавьте папку в исключения или отключите PUA. Все бинарники взяты из официального репозитория zapret, проверяйте по хэшам.</p>
+          </div>
+          <div class="warn-card caution">
+            <div class="warn-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              Остерегайтесь фейков
+            </div>
+            <p>Автор <strong>не ведёт</strong> Telegram-каналы, YouTube или другие страницы. Всё, что распространяется вне официального <a href="https://github.com/blipperr/Discord-Fix" target="_blank" rel="noopener noreferrer">GitHub репозитория</a> — <strong>фейк</strong> и может содержать вредоносное ПО.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== INSTRUCTIONS ========== -->
+    <section id="instructions">
+      <div class="container">
+        <div class="section-header animate">
+          <h2>Как установить и запустить</h2>
+          <p>Следуйте шагам ниже — весь процесс занимает около 5 минут</p>
+        </div>
+        <div class="steps">
+          <div class="step animate delay-1">
+            <div class="step-num" aria-hidden="true">1</div>
+            <div class="step-body">
+              <h3>Включите Secure DNS в браузере</h3>
+              <p><strong>Chrome:</strong> Настройки → «Использовать безопасный DNS», выберите любого провайдера кроме дефолтного.<br>
+              <strong>Firefox:</strong> Настройки → «DNS через HTTPS» → Максимальная защита → вставьте <code>https://dns.google/dns-query</code>.<br>
+              <strong>Windows 11</strong> поддерживает Secure DNS прямо в настройках ОС.</p>
+            </div>
+          </div>
+          <div class="step animate delay-2">
+            <div class="step-num" aria-hidden="true">2</div>
+            <div class="step-body">
+              <h3>Скачайте архив</h3>
+              <p>Загрузите ZIP или RAR архив со страницы релизов выше. Размер около 5 МБ.</p>
+            </div>
+          </div>
+          <div class="step animate delay-3">
+            <div class="step-num" aria-hidden="true">3</div>
+            <div class="step-body">
+              <h3>Разблокируйте архив (опционально)</h3>
+              <p>Щёлкните правой кнопкой по архиву → Свойства → поставьте галочку <strong>«Разблокировать»</strong>. Этот шаг не нужен, если вы используете <strong>7-Zip</strong> или <strong>PeaZip</strong>.</p>
+            </div>
+          </div>
+          <div class="step animate delay-4">
+            <div class="step-num" aria-hidden="true">4</div>
+            <div class="step-body">
+              <h3>Распакуйте в надёжное место</h3>
+              <p>Путь к папке <strong>не должен содержать кириллицу</strong> (русские буквы) и специальные символы. Например: <code>C:\tools\discord-fix</code>.</p>
+            </div>
+          </div>
+          <div class="step animate">
+            <div class="step-num" aria-hidden="true">5</div>
+            <div class="step-body">
+              <h3>Запустите нужный файл</h3>
+              <p>Перейдите в папку и запустите <code>general.bat</code> для ручного тестирования стратегий или <code>service.bat</code> для постоянного автозапуска.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FILES ========== -->
+    <section id="files" class="files-section">
+      <div class="container">
+        <div class="section-header animate">
+          <h2>Описание файлов</h2>
+          <p>Инструмент предоставляет несколько вариантов работы в зависимости от ваших нужд</p>
+        </div>
+        <div class="cards-grid">
+          <article class="card animate delay-1">
+            <div class="card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              <span class="card-title">general.bat</span>
+            </div>
+            <div class="card-sub">Ручной запуск утилиты</div>
+            <p style="font-size:0.875rem;color:var(--text-muted);line-height:1.7;">
+              Используется для ручного запуска и тестирования. После запуска откроется процесс <code>winws.exe</code> в панели задач. Пробуйте разные стратегии — <strong>ALT</strong>, <strong>FAKE</strong> и другие — пока не найдёте рабочее именно для вашего провайдера.
+            </p>
+          </article>
+
+          <article class="card animate delay-2">
+            <div class="card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
+              <span class="card-title">service.bat</span>
+            </div>
+            <div class="card-sub">Автозапуск и управление</div>
+            <ul class="feature-list">
+              <li><strong>Install / Remove Service</strong> — установка/удаление службы автозапуска в <code>services.msc</code></li>
+              <li><strong>Check Status</strong> — проверка состояния обхода и служб</li>
+              <li><strong>Game Filter</strong> — режим фильтрации для игр (UDP/TCP &gt;1023)</li>
+              <li><strong>IPSet Filter</strong> — управление обходом по IP-спискам (none / loaded / any)</li>
+              <li><strong>Update Hosts File</strong> — починка веб-версии Telegram и голосовых чатов Discord</li>
+              <li><strong>Auto-Update Check</strong> — вкл/выкл автоматическую проверку обновлений</li>
+              <li><strong>Update IPSet List</strong> — обновление списка <code>ipset-all.txt</code></li>
+              <li><strong>Run Diagnostics</strong> — диагностика + очистка кэша Discord</li>
+              <li><strong>Run Tests</strong> — проверка стратегий и DPI чекеры</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section id="faq">
+      <div class="container">
+        <div class="section-header animate">
+          <div class="faq-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <h2>Частые вопросы</h2>
+        </div>
+
+        <div class="faq-list" role="list">
+
+          <details data-testid="faq-item-1">
+            <summary>
+              После запуска general* ничего не происходит
+              <svg class="summary-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              После запуска стратегии должен появиться процесс <code>winws.exe</code> в панели задач (иконка замочка). Если этого не произошло, откройте Диспетчер задач и проверьте наличие процесса. Если его нет — запустите <code>service.bat</code> → <strong>Run Diagnostics</strong>.
+            </div>
+          </details>
+
+          <details data-testid="faq-item-2">
+            <summary>
+              Не работает веб-Telegram или вечное «подключение» в Discord Voice
+              <svg class="summary-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              Запустите <code>service.bat</code> и выберите <strong>Update Hosts File</strong>. Если файл hosts устарел, скопируйте предложенное содержимое и вставьте в конец файла <code>C:\Windows\System32\drivers\etc\hosts</code>, открытого от имени администратора. Сохраните и перезагрузите браузер.
+            </div>
+          </details>
+
+          <details data-testid="faq-item-3">
+            <summary>
+              Обход не работает или перестал работать
+              <svg class="summary-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              Стратегии обхода со временем могут устаревать — это нормально. Попробуйте другие стратегии в <code>general.bat</code> (особенно <strong>ALT</strong> и <strong>FAKE</strong>). Запустите <code>service.bat</code> → <strong>Run Diagnostics</strong> для поиска типовых проблем. Если ни одна стратегия не помогает — потребуется создать новую на основе документации zapret.
+            </div>
+          </details>
+
+          <details data-testid="faq-item-4">
+            <summary>
+              Как правильно переустановить утилиту?
+              <svg class="summary-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              1. <code>service.bat</code> → <strong>Remove Services</strong><br>
+              2. <code>service.bat</code> → <strong>Run Diagnostics</strong> → в конце нажмите Y для очистки<br>
+              3. Перезагрузите компьютер<br>
+              4. Удалите папку с утилитой<br>
+              5. Скачайте последнюю версию со страницы релизов<br>
+              6. Распакуйте в папку без кириллицы и пробелов<br>
+              7. Проверьте стратегии через <code>general.bat</code><br>
+              8. Установите рабочую стратегию: <code>service.bat</code> → <strong>Install Service</strong>
+            </div>
+          </details>
+
+          <details data-testid="faq-item-5">
+            <summary>
+              Не работает игра или приложение с запущенным запретом
+              <svg class="summary-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              В <code>service.bat</code> убедитесь, что <strong>Game Filter</strong> установлен в <em>disabled</em>, а <strong>IPSet Filter</strong> — в <em>none</em>. Эти режимы могут неожиданно затронуть трафик игр и других UDP-сервисов. После изменений перезапустите стратегию.
+            </div>
+          </details>
+
+          <details data-testid="faq-item-6">
+            <summary>
+              Античит ругается на WinDivert
+              <svg class="summary-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              Используйте скрытую версию драйвера WinDivert. Инструкция и файлы находятся в официальном репозитории: <a href="https://github.com/bol-van/zapret-win-bundle/tree/master/windivert-hide" target="_blank" rel="noopener noreferrer">windivert-hide</a>.
+            </div>
+          </details>
+
+          <details data-testid="faq-item-7">
+            <summary>
+              Windows 7 требует цифровую подпись драйвера
+              <svg class="summary-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              Замените файлы <code>WinDivert.dll</code> и <code>WinDivert64.sys</code> в папке <code>bin</code> на одноимённые файлы из папки <a href="https://github.com/bol-van/zapret-win-bundle/tree/master/win7" target="_blank" rel="noopener noreferrer">zapret-win-bundle/win7</a> официального репозитория.
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="container">
+      <div class="footer-logo" aria-label="Discord Fix">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><polyline points="7 10 12 5 17 10"/></svg>
+        Discord Fix
+      </div>
+
+      <p class="footer-desc">
+        Основан на проекте <a href="https://github.com/bol-van/zapret" target="_blank" rel="noopener noreferrer">zapret</a> от bol-van — open-source решении для обхода DPI.<br>
+        Оригинальный репозиторий <strong>zapret discord youtube</strong>: <a href="https://github.com/Flowseal/zapret-discord-youtube" target="_blank" rel="noopener noreferrer">Flowseal/zapret-discord-youtube</a>.
+      </p>
+
+      <nav class="footer-links" aria-label="Ссылки на проекты">
+        <a href="https://github.com/blipperr/Discord-Fix" target="_blank" rel="noopener noreferrer" data-testid="link-github">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          GitHub проекта
+        </a>
+        <span aria-hidden="true">·</span>
+        <a href="https://github.com/bol-van/zapret" target="_blank" rel="noopener noreferrer">
+          zapret (оригинал)
+        </a>
+        <span aria-hidden="true">·</span>
+        <a href="https://github.com/Flowseal/tg-ws-proxy" target="_blank" rel="noopener noreferrer">
+          Ускоритель Telegram (tg-ws-proxy)
+        </a>
+        <span aria-hidden="true">·</span>
+        <a href="https://github.com/bol-van/zapret?tab=readme-ov-file#поддержать-разработчика" target="_blank" rel="noopener noreferrer">
+          Поддержать разработчика
+        </a>
+      </nav>
+
+      <p class="footer-legal">
+        Данный сайт носит информационный характер и не связан с официальными разработчиками Discord или YouTube.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script>
+    // ---- Theme Toggle ----
+    const html = document.documentElement;
+    const btn  = document.getElementById('themeToggle');
+    const STORAGE_KEY = 'df-theme';
+
+    function applyTheme(theme) {
+      html.setAttribute('data-theme', theme);
+      localStorage.setItem(STORAGE_KEY, theme);
+    }
+
+    // Restore saved preference (default: dark)
+    const saved = localStorage.getItem(STORAGE_KEY) || 'dark';
+    applyTheme(saved);
+
+    btn.addEventListener('click', () => {
+      const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      applyTheme(next);
+    });
+
+    // ---- Scroll-into-view animations ----
+    const animEls = document.querySelectorAll('.animate');
+    if ('IntersectionObserver' in window) {
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            obs.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      animEls.forEach(el => obs.observe(el));
+    } else {
+      animEls.forEach(el => el.classList.add('visible'));
+    }
+  </script>
+
+</body>
+</html>
